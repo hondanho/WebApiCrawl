@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCrawl", "WebApiCrawl\WebApiCrawl.csproj", "{6F515613-01C8-494B-A9E2-ED30E1759402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrariesCrawl", "LibrariesCrawl\LibrariesCrawl.csproj", "{9A4F374C-7C19-4BB9-8C7E-E086BDBC34A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F515613-01C8-494B-A9E2-ED30E1759402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F515613-01C8-494B-A9E2-ED30E1759402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F515613-01C8-494B-A9E2-ED30E1759402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F515613-01C8-494B-A9E2-ED30E1759402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A4F374C-7C19-4BB9-8C7E-E086BDBC34A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4F374C-7C19-4BB9-8C7E-E086BDBC34A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4F374C-7C19-4BB9-8C7E-E086BDBC34A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4F374C-7C19-4BB9-8C7E-E086BDBC34A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43AAC1C0-28AC-4A19-990D-E93A4D180C57}
+	EndGlobalSection
+EndGlobal
