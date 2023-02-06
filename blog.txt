@@ -1,0 +1,30 @@
+news,technology,auto
+- top technoly site
+- analytics: rank, top keyword, sitemap, new post
+- theme, build website
+- auto
+
+
+hệ thống spy
+	chức năng:
+		- quản lý site spy: danh sách thêm sửa xóa, số lượng category, số lượng post, số lượng post đã spy, trạng thái fail success
+		- nhập regex sitemap, nhập regex category, nhập regex post
+		- lên lịch spy, lịch submit
+
+	web
+		- spy
+			+ website: id, domain, fail_spy_amount, success_spy_amount, post_per_day, 
+						regex_sitemap:list post,
+						regex_category:list category, 
+						regex_post:info domain
+						create, update, deleteflag
+			+ post: id, category_id, create_date, title, content, thumbnail, create, update
+			+ category: id, name, link, website_id, thumbnail, create_date, create, update
+	
+	task schedule service
+		- setup lịch schedule
+	
+	api
+		- sync dữ liệu từ db craw lên db website
+
+website 1,2,3

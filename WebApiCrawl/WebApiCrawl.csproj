@@ -12,8 +12,10 @@
 
   <ItemGroup>
     <Folder Include="Extensions\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="Service\Interface\" />
+    <Folder Include="Data\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Repositories\Interfaces\" />
   </ItemGroup>
 
 </Project>
