@@ -16,10 +16,5 @@ namespace WebApiCrawl.Controllers {
         public IEnumerable<WebsiteModel> Get() {
             return new List<WebsiteModel>();
         }
-
-        [HttpGet(Name = "GetWebsites")]
-        public IEnumerable<WebsiteModel> Get() {
-            return new List<WebsiteModel>();
-        }
     }
 }

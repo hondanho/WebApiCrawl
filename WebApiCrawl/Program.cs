@@ -1,5 +1,7 @@
 using AspnetRunBasics.Data;
 using System.Configuration;
+using WebApiCrawl.Repositories;
+using WebApiCrawl.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,17 +16,14 @@ builder.Services.AddSwaggerGen();
 
 // add database dependecy
 builder.Services.AddDbContext<CrawlDbContext>(c =>
-    c.UseSqlServer(Configuration.GetSection("AspnetRunConnection")));
+    c.(Configuration.GetSection("AspnetRunConnection")));
 
 #endregion
 
 #region project services
 
 // add repository dependecy
-builder.Services.AddScoped<I, ProductRepository>();
-services.AddScoped<ICartRepository, CartRepository>();
-services.AddScoped<IOrderRepository, OrderRepository>();
-services.AddScoped<IContactRepository, ContactRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 #endregion
 

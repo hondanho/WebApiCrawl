@@ -1,6 +1,8 @@
-﻿namespace WebApiCrawl.Repositories
+﻿using WebApiCrawl.Repositories.Interfaces;
+
+namespace WebApiCrawl.Repositories
 {
-    public class CategoryRepository
+    public class CategoryRepository : ICategoryRepository
     {
     }
 }
