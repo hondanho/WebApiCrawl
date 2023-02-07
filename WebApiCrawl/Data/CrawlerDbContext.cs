@@ -3,9 +3,9 @@ using WebApiCrawl.Entities;
 
 namespace AspnetRunBasics.Data
 {
-    public class CrawlDbContext : DbContext
+    public class CrawlerDbContext : DbContext
     {
-        public CrawlDbContext(DbContextOptions<CrawlDbContext> options)
+        public CrawlerDbContext(DbContextOptions<CrawlerDbContext> options)
             : base(options)
         {
         }

@@ -7,6 +7,7 @@ namespace WebApiCrawl.Entities
         public int Id { get; set; }
         [Required]
         public string Title { get; set; }
+        public int WebsiteId { get; set; }
         public string Thumbnail { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime UpdateDate { get; set; }

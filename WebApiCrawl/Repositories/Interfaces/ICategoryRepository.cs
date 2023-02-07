@@ -1,6 +1,9 @@
-﻿namespace WebApiCrawl.Repositories.Interfaces
+﻿using WebApiCrawl.Entities;
+
+namespace WebApiCrawl.Repositories.Interfaces
 {
-    public class ICategoryRepository
+    public interface ICategoryRepository
     {
+        Task<List<Category>> GetAllByWebsiteId(int websiteId);
     }
 }

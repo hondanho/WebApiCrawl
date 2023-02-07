@@ -1,22 +1,26 @@
 using AspnetRunBasics.Data;
-using System.Configuration;
+using Microsoft.EntityFrameworkCore;
 using WebApiCrawl.Repositories;
 using WebApiCrawl.Repositories.Interfaces;
+using WebApiCrawler.Extensions.AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddAutoMapper(typeof(WebsiteProfile));
+builder.Services.AddControllersWithViews();
 
 #region database services
 
 // add database dependecy
-builder.Services.AddDbContext<CrawlDbContext>(c =>
-    c.(Configuration.GetSection("AspnetRunConnection")));
+var connectionString = builder.Configuration.GetConnectionString("CrawlerConnection");
+builder.Services.AddDbContext<CrawlerDbContext>(option =>
+    option.UseSqlServer(connectionString));
 
 #endregion
 
